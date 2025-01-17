@@ -1,0 +1,94 @@
+@media (min-width: 1000px) {
+    .navbar-expand-md .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+    }
+}
+@media (min-width: 1285px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+@media(max-width:1200px){
+    .letter h2{
+        font-size: 2rem;
+    }
+}
+@media(max-width:1100px) {
+    .pizza-box {
+        right: 0px;
+        top: 10%;
+        width: 60%;
+    }
+    /* .pizza-title{
+        font-size: 2rem;
+    } */
+}
+@media(max-width:1000px) {
+    .whole-head{
+        display: none !important;
+    }
+    .btn-canvas{
+        display: block !important;
+    }
+}
+@media(max-width:992px){
+    .single-countdown span i {
+        font-size: 22px;
+    }
+    .pizza-box {
+        right: 0px;
+        top: 50%;
+        width: 40%;
+    }
+     .pizza-title{
+        font-size: 2rem;
+    }
+}
+@media(max-width:768px) {
+    .diet-title h2{
+        font-size: 2.3rem;
+    }
+    .banner-content h1{
+        font-size: 3rem;
+    }
+    .app-title::after{
+        left: 12%;
+    }
+    .letter h2{
+        font-size: 1.6rem;
+    }
+    .letter i{
+        font-size: 30px;
+    }
+}
+@media(max-width:567px){
+    .diet-title::after{
+        left: 15%;
+    }
+    .letter i{
+        font-size: 22px;
+    }
+    .letter h2{
+        font-size: 1.2rem;
+    }
+}
+@media(max-width:500px) {
+    .app-title::after{
+        left: 18%;
+    }
+    .letter h2{
+        font-size: 1rem;
+    }
+    .letter i,.app-box{
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+    }
+    .letter i{
+         font-size: 26px;
+    }
+    .sub-btn{
+        padding: 0px 13px;
+    }
+}

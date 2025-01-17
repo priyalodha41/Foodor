@@ -1,0 +1,682 @@
+*{
+    list-style: none;
+}
+:root{
+    --primary-color:#0c0f2e;
+    --secondary-color:#fe771c;
+}
+.display{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul,ol{
+    margin: 0px;
+    padding: 0px;
+}
+.header-nav .nav-item .nav-link{
+    padding: 30px 20px;
+    font-weight: 500;
+    font-size: 15px;
+   color:var(--primary-color);
+}
+.navbar-brand img{
+    padding: 5px 0px;
+}
+.navbar-nav .cart .carts{
+    width: 20px;
+    height: 20px;
+}
+.navbar-nav .cart sup{
+    background: white;
+    padding: 10px 6px;
+    border-radius: 50%;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 12px;
+    top: -10px;
+}
+.pages-dropdown{
+    position:absolute;
+    left: 0;
+    padding: 15px 5px;
+    top: 150%;
+    background: #fff;
+    border: none;
+    border-radius: 0px;
+    box-shadow: 11px 10px 38px 0 rgba(46, 63, 99, 0.15);
+    min-width: 200px;
+    display: block;
+    opacity: 0;
+    border-radius: 5px;
+    visibility: hidden;
+    transition: all 300ms linear;
+}
+.pages:hover .pages-dropdown{
+    opacity: 1;
+    visibility: visible;
+    top:120%;
+}
+.pages-dropdown li{
+    padding: 7px 15px;
+   color:var(--primary-color);
+    font-size: 14px;
+    transition: all 300ms linear;
+    font-weight: 500;
+    cursor: pointer;
+}
+.pages-dropdown li:hover{
+    color:var(--secondary-color);
+    padding-left: 25px;
+}
+.nav-item.login .nav-link{
+    color:white;
+    transition: all 0.4s linear;
+}
+.nav-item.login .nav-link:hover{
+   color:var(--primary-color);
+}
+.cart-box{
+    height: 350px;
+    padding: 5px 20px 20px 20px;
+    overflow-y: auto;
+    width: 300px;
+    position: absolute;
+    right: 0;
+    top: 120%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 99;
+    background-color:white;
+    transition: all 0.3s linear;
+    transform: translateY(20px);
+}
+.cart:hover .cart-box{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+.card-img{
+    width: 30%;
+    margin-right: 20px;
+}
+.cart-box .card-item{
+    border-bottom: 1px solid #ededed;
+    padding: 20px 0;
+    text-align: left;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.card-content .title{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+   color:var(--primary-color);
+   transition: all 0.3s linear;
+   cursor: pointer;
+}
+.card-content .quantity{
+    color: #222;
+    display: block;
+}
+.card-content .price{
+    color: var(--secondary-color);
+    display: block;
+}
+.card-content .trash-can{
+    position: absolute;
+    color: #222;
+    right: 2px;
+    top: 18px;
+    display: inline-block;
+    left: auto;
+    font-size: 16px;
+}
+.total-money{
+    border-bottom: 1px solid #ededed;
+    padding: 20px 0;
+}
+.total-money h4{
+    color: #3e3d43;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.card-btn a{
+    background-color: #333;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 18px;
+    transition: all 0.3s linear;
+}
+.card-btn a:hover{
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+.card-content .title:hover{
+    color:  var(--secondary-color);
+}
+.banner-bg img{
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 73%;
+    height: 89%;
+    background-size: cover;
+    z-index: -1;
+}
+.btn-canvas{
+    border: none;
+}
+.banner-sec{
+    overflow: hidden;
+}
+.banner-content h1,.pizza-title,.diet-title h2,.popular-title h2{
+    font-size: 4.8rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    color: var(--primary-color);
+}
+.pizza-title,.diet-title h2,.popular-title h2{
+    line-height: 65px;
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: white;
+}
+.popular-title h2{
+    color: var(--primary-color);
+}
+.popular-title{
+    margin-bottom: 80px;
+}
+.diet-title h2{
+    color:var(--primary-color);
+    text-transform:capitalize;
+}
+.banner-content p{
+    color: #5a5b67;
+}
+.location-form{
+    border-radius: 30px;
+    margin: 40px 0px 0px 0px;
+    position: relative;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+.form-selector,.form-control.location-input{
+   border: none;
+   color: #5a5b67;
+   font-weight: 500;
+}
+.form-control.location-input{
+    box-shadow: none;
+    font-size: 14px;
+    padding: 10px 0px 10px 25px;
+}
+.form-content i{
+    color: var(--secondary-color);
+    position: absolute;
+    top: 20%;
+    left: -3px;
+}
+.location-submit{
+    background: var(--secondary-color);
+    background: linear-gradient(0deg, #ff6d1a 50%, #fd831e 100%);
+    color: #fff;
+    font-size: 15px;
+    padding: 13px 30px;
+    border-radius: 30px;
+    border: 0;
+    font-weight: 500;
+}
+.form-content{
+    min-height: 45px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+.btn-find{
+    position: absolute;
+    right: 0;
+}
+.btn.location-submit:hover{
+    color:white;
+}
+.orders,.quick-pick,.diet,.popular-item,.clients,.blogs{
+    padding-top: 100px;
+}
+.orders,.quick-pick,.banner-sec,.diet,.popular-item,.clients,.mobile-app{
+    padding-bottom:100px;
+}
+.popular-item{
+    padding: 130px 0px;
+}
+.diet{
+    padding-bottom: 170px;
+}
+.quick-pick{
+    background-color: #fafafa;
+}
+.food-content{
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.food-img{
+    display: inline-block;
+    margin-right: 12px;
+    height: 60px;
+    width: 60px;
+    border: 1px solid var(--primary-color);
+    border-radius: 100%;
+    padding: 15px;
+    text-align: center;
+    line-height: 34px;
+    transition: all 0.4s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.food-name h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: all .4s linear 0s;
+    color: var(--primary-color);
+}
+.food-content:hover .food-img{
+    border: 1px solid var(--secondary-color);
+}
+.order-title h4,.quick-title h4{
+    font-size: 2.8rem;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    color: var(--primary-color);
+    padding-bottom: 10px;
+    line-height: 55px;
+}
+.order-title::after,.quick-title::after,.diet-title::after,.popular-title::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 120px;
+    height: 5px;
+    background-image: url(/assets/images/border.png);
+    background-repeat: no-repeat;
+    transform: translateX(-50%);
+}
+.app-title::after{
+    left: 10%;
+}
+.diet-title::after{
+    left: 12%;
+}
+.quick-title::after{
+    bottom: -7px;
+    height: 5px;
+    width: 100%;
+}
+.single-step h6{
+    font-size: 1.375rem;
+    font-weight: 600;
+    transition: all .4s linear 0s;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.single-step h6:hover{
+    color: var(--secondary-color);
+}
+.food-content.quick-tab{
+    box-shadow: none !important;
+}
+.card img{
+    border-radius: 12px;
+}
+.card{
+    transition: all 0.3s linear;
+    cursor: pointer;
+    border-radius: 17px;
+}
+.product-rating i{
+    color: var(--secondary-color);
+    font-size: 22px;
+}
+.product-rating span,.product-pricing span{
+    color: var(--primary-color);
+    padding-left: 5px;
+    font-weight: 600;
+}
+.product-pricing span{
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+.card:hover{
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+.card-thumb:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(34, 34, 34, 0.56);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s linear 0s;
+    border-radius: 12px;
+}
+.card:hover .card-thumb:before{
+    opacity: 1;
+    visibility: visible;
+}
+.add-btn{
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 30px;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%);
+    transition: all .4s linear 0s;
+    opacity: 0;
+    visibility: hidden;
+    border: none;
+}
+.card:hover .add-btn{
+    opacity: 1;
+    visibility:visible;
+}
+.add-btn:hover{
+    background-color: #ffffff;
+    color:var(--secondary-color) ;
+}
+.nav-pills .nav-link.active,.tabs:hover{
+    border-color: transparent !important;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+    background-color: #fff;
+    border-radius: 50px;
+    transition: all .2s linear 0s;
+}
+.nav-pills .nav-link.active .food-name h4 ,.food-content:hover .food-name h4{
+    color: var(--secondary-color);
+}
+.nav-pills .nav-link.active .food-img,.food-content:hover .food-img{
+    border:1px solid var(--secondary-color);
+}
+.pizza,.letter{
+    background: url(../images/action_bg.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px;
+}
+.pizza-box{
+    position:absolute;
+    right: 0;
+    top: -50px;
+}
+.pizza-content a{
+    padding: 12px 42px;
+    background-color:var(--primary-color);
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: 0;
+    transition: all 0.3s linear;
+}
+.pizza-content a:hover{
+    background-color: #fff;
+    color:var(--primary-color);
+}
+.single-countdown{
+    padding: 40px 15px 20px;
+    border-radius: 25px;
+}
+.single-countdown span{
+    color:var(--secondary-color);
+    font-weight: 600;
+}
+.single-countdown span i{
+    font-size: 25px;
+}
+.single-countdown p{
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #5a5b67;
+}
+.diet-para{
+    color: #5a5b67;
+}
+.clients{
+    background: url(../images/carousel_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.total-client{
+    border-radius: 15px;
+    /* padding: 18px 20px; */
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1) !important;
+}
+.client-info img{
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-bottom: 10px;
+}
+.client-info h6{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color:var(--primary-color);
+}
+.client-info p{
+    color: var(--secondary-color);
+}
+.star-list li i{
+    font-size: 1.3rem;
+    color:#fba13a;
+}
+.margin{
+    margin-bottom: 60px;
+}
+.client-img img{
+    width: 80px;
+    height: 60px;
+}
+.bg-client{
+    background-color: var(--secondary-color);
+}
+.blog-left img{
+    border-radius: 15px;
+}
+.blog-left h2,.single-blog h2{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 34px;
+    color: var(--primary-color);
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.blog-left h2:hover,.single-blog h2:hover{
+    color: var(--secondary-color);
+}
+.blog-left-foot{
+    border-top: 1px dashed #cfcfcf;
+}
+.blog-left-foot i{
+    color: var(--secondary-color);
+    margin-right: 6px;
+}
+.blog-left,.app-content p{
+    color:#5a5b67
+}
+.mobile-app{
+    padding: 60px 0px 100px 0px;
+}
+.app-steps li span{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    margin-right: 12px;
+    background: linear-gradient(0deg, #ff6d1a 50%, #fd831e 100%);
+}
+.app-steps li{
+    font-weight: 600;
+    color:var(--primary-color);
+    font-size: 22px;
+    padding: 10px 0;
+}
+.single-blog h3:hover{
+    color: var(--secondary-color);
+}
+.single-blog h3{
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.app-box li{
+    padding: 10px 25px;
+    border-radius: 15px;
+}
+.app-box .apple-store{
+    background: linear-gradient(0deg, #ff6d1a 50%, #fd831e 100%);
+    color: white;
+    box-shadow: 5px 5px 15px 0px rgba(255, 109, 26, 0.5);
+}
+.apple-store i{
+    font-size: 2.5rem;
+    margin-right: 6px;
+}
+.app-box .google-store{
+    background: #fff;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+.letter-content i{
+    font-size: 45px;
+    color: white;
+}
+.form-control.email{
+    border-radius: 25px;
+    height: 50px;
+    border: 0;
+    padding: 10px 20px;
+}
+.email.form-control:focus{
+    box-shadow: none;
+}
+.sub-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 0;
+    background-color:var(--primary-color);
+    height: 100%;
+    color: #fff;
+    padding: 0 30px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+.letter{
+    padding: 70px;
+}
+.sub-btn:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
+footer{
+    background-color: #282932;
+}
+.foot-1-icons li i{
+    color: #fff;
+    background: #53545b;
+    text-align: center;
+    border-radius: 50%;
+    transition: all .4s linear 0s;
+    padding: 7px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.foot-1-icons li i:hover{
+    background-color: var(--secondary-color);
+}
+/* footer::before{
+    background: url(../images/f-loc-left.png);
+    width: 303px;
+    position: absolute;
+    content: "";
+    left: 10%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* z-index: -1; */
+
+.foot-2-title h3::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 3px;
+    background-color:var(--secondary-color);
+    width: 25px;
+    border-radius: 50px;
+}
+.foot-2-title h3{
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.foot-2 ul li{
+    padding: 5px 0;
+    color: #fff;
+    transition: all .4s linear 0s;
+    cursor: pointer;
+}
+.foot-2 ul li:hover{
+    color: var(--secondary-color);
+}
+.foot-img img{
+    border-radius: 10px;
+}
+.foots-img::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(34, 34, 34, 0.56);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s linear 0s;
+    cursor: pointer;
+}
+.foots-img:hover:before{
+    opacity: 1;
+    visibility:visible;
+}
+.foot-contact{
+    color: white;
+}
+.foot-contact li i{
+    color: var(--secondary-color);
+}
+.foot-contact li span{
+    transition: all 0.4s linear;
+    cursor: pointer;
+}
+.foot-contact li span:hover{
+    color: var(--secondary-color);
+}
+.foots-icons{
+    
+}
