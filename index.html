@@ -14,7 +14,7 @@
     <!-- Nice select -->
     <link rel="stylesheet" href="./assets/css/Nice-select/nice-select.css">
     <!-- Swiper css -->
-    <link rel="stylesheet" href="./assets/css/swiper.css"/>
+    <link rel="stylesheet" href="./assets/css/swiper.css" />
     <!-- Linking Bootstrap Css -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <!-- Normal css -->
@@ -114,17 +114,17 @@
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav ms-auto header-nav">
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Home</a>
+                    <li class="nav-item off-canvas-item">
+                        <a href="" class="nav-link off-canvas-link">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">About</a>
+                    <li class="nav-item off-canvas-item">
+                        <a href="" class="nav-link off-canvas-link">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Menu</a>
+                    <li class="nav-item off-canvas-item">
+                        <a href="" class="nav-link off-canvas-link">Menu</a>
                     </li>
-                    <li class="nav-item position-relative pages">
-                        <a href="" class="nav-link">Pages <i class="ri-arrow-down-s-line fw-bolder"></i></a>
+                    <li class="nav-item position-relative pages off-canvas-item">
+                        <a href="" class="nav-link off-canvas-link">Pages <i class="ri-arrow-down-s-line fw-bolder"></i></a>
                         <ul class="pages-dropdown">
                             <li>Services</li>
                             <li>Sign Up</li>
@@ -135,18 +135,18 @@
                             <li>Error</li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Blog</a>
+                    <li class="nav-item off-canvas-item">
+                        <a href="" class="nav-link off-canvas-link">Blog</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Contact</a>
+                    <li class="nav-item off-canvas-item">
+                        <a href="" class="nav-link off-canvas-link">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
     <!-- Main -->
-    <main>
+    <main id="main">
         <!-- Banner section -->
         <section class="banner-sec pt-5">
             <div class="banner-bg">
@@ -846,37 +846,13 @@
 
                             </div>
                         </div>
-                        <div class="swiper-slide"> 
-                            <div>
-                            <div class="card">
-                                <div class="card-thumb position-relative">
-                                    <img src="./assets/images/food_08.jpg"
-                                        class="card-img-top img-fluid" alt="...">
-                                    <button class="btn add-btn"> <i
-                                            class="ri-add-line fw-bolder"></i>Add to Bag</button>
-                                </div>
-                                <div class="card-body">
-                                    <h4>Chicken Masala</h4>
-                                    <div class="display align-items-center">
-                                        <div class="product-rating display align-items-center">
-                                            <i class="ri-star-s-line"></i>
-                                            <span>5.00</span>
-                                        </div>
-                                        <div class="product-pricing ms-3">
-                                            <span>$99.00</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div>
                         <div class="swiper-slide">
                             <div>
                                 <div class="card">
                                     <div class="card-thumb position-relative">
-                                        <img src="./assets/images/food_07.jpg"
-                                            class="card-img-top img-fluid" alt="...">
-                                        <button class="btn add-btn"> <i
-                                                class="ri-add-line fw-bolder"></i>Add to Bag</button>
+                                        <img src="./assets/images/food_08.jpg" class="card-img-top img-fluid" alt="...">
+                                        <button class="btn add-btn"> <i class="ri-add-line fw-bolder"></i>Add to
+                                            Bag</button>
                                     </div>
                                     <div class="card-body">
                                         <h4>Chicken Masala</h4>
@@ -897,10 +873,9 @@
                             <div>
                                 <div class="card">
                                     <div class="card-thumb position-relative">
-                                        <img src="./assets/images/food_04.jpg"
-                                            class="card-img-top img-fluid" alt="...">
-                                        <button class="btn add-btn"> <i
-                                                class="ri-add-line fw-bolder"></i>Add to Bag</button>
+                                        <img src="./assets/images/food_07.jpg" class="card-img-top img-fluid" alt="...">
+                                        <button class="btn add-btn"> <i class="ri-add-line fw-bolder"></i>Add to
+                                            Bag</button>
                                     </div>
                                     <div class="card-body">
                                         <h4>Chicken Masala</h4>
@@ -917,29 +892,52 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">  
+                        <div class="swiper-slide">
                             <div>
-                            <div class="card">
-                                <div class="card-thumb position-relative">
-                                    <img src="./assets/images/food_03.jpg"
-                                        class="card-img-top img-fluid" alt="...">
-                                    <button class="btn add-btn"> <i
-                                            class="ri-add-line fw-bolder"></i>Add to Bag</button>
-                                </div>
-                                <div class="card-body">
-                                    <h4>Chicken Masala</h4>
-                                    <div class="display align-items-center">
-                                        <div class="product-rating display align-items-center">
-                                            <i class="ri-star-s-line"></i>
-                                            <span>5.00</span>
-                                        </div>
-                                        <div class="product-pricing ms-3">
-                                            <span>$99.00</span>
+                                <div class="card">
+                                    <div class="card-thumb position-relative">
+                                        <img src="./assets/images/food_04.jpg" class="card-img-top img-fluid" alt="...">
+                                        <button class="btn add-btn"> <i class="ri-add-line fw-bolder"></i>Add to
+                                            Bag</button>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Chicken Masala</h4>
+                                        <div class="display align-items-center">
+                                            <div class="product-rating display align-items-center">
+                                                <i class="ri-star-s-line"></i>
+                                                <span>5.00</span>
+                                            </div>
+                                            <div class="product-pricing ms-3">
+                                                <span>$99.00</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="card">
+                                    <div class="card-thumb position-relative">
+                                        <img src="./assets/images/food_03.jpg" class="card-img-top img-fluid" alt="...">
+                                        <button class="btn add-btn"> <i class="ri-add-line fw-bolder"></i>Add to
+                                            Bag</button>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Chicken Masala</h4>
+                                        <div class="display align-items-center">
+                                            <div class="product-rating display align-items-center">
+                                                <i class="ri-star-s-line"></i>
+                                                <span>5.00</span>
+                                            </div>
+                                            <div class="product-pricing ms-3">
+                                                <span>$99.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -954,123 +952,135 @@
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper margin">
                         <div class="swiper-slide">
-                           <div class="total-client">
-                            <div class="client-info display align-items-center">
-                                <div>
-                                    <img src="./assets/images/author_03.png" alt="" class="img-fluid">
+                            <div class="total-client">
+                                <div class="client-info display align-items-center">
+                                    <div>
+                                        <img src="./assets/images/author_03.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">Daniel Bloom</h6>
+                                        <p class="fw-medium">Manager at a Restaurant</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h6 class="mb-1">Daniel Bloom</h6>
-                                    <p class="fw-medium">Manager at a Restaurant</p>
+                                <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+                                    ipsam. Iste veritatis id repellendus commodi facilis consequatur, minima aspernatur
+                                    ipsam.</p>
+                                <div class="display justify-content-between align-items-center">
+                                    <div>
+                                        <ul class="display star-list gap-1">
+                                            <li><i class="ri-star-fill"></i></li>
+                                            <li><i class="ri-star-fill"></i></li>
+                                            <li><i class="ri-star-fill"></i></li>
+                                            <li><i class="ri-star-fill"></i></li>
+                                            <li><i class="ri-star-fill"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="client-img">
+                                        <img src="./assets/images/Screenshot 2025-01-15 1705.png" alt=""
+                                            class="img-fluid">
+                                    </div>
                                 </div>
                             </div>
-                            <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ipsam. Iste veritatis id repellendus commodi facilis consequatur, minima aspernatur ipsam.</p>
-                            <div class="display justify-content-between align-items-center">
-                               <div>
-                                <ul class="display star-list gap-1">
-                                    <li><i class="ri-star-fill"></i></li>
-                                    <li><i class="ri-star-fill"></i></li>
-                                    <li><i class="ri-star-fill"></i></li>
-                                    <li><i class="ri-star-fill"></i></li>
-                                    <li><i class="ri-star-fill"></i></li>
-                                </ul>
-                               </div>
-                               <div class="client-img">
-                                    <img src="./assets/images/Screenshot 2025-01-15 1705.png" alt="" class="img-fluid">
-                               </div>
-                            </div>
-                           </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="total-client bg-client">
-                             <div class="client-info display align-items-center">
-                                 <div>
-                                     <img src="./assets/images/author_01.png" alt="" class="img-fluid">
-                                 </div>
-                                 <div>
-                                     <h6 class="mb-1 text-white">Daniel Bloom</h6>
-                                     <p class="fw-medium text-white">Manager at a Restaurant</p>
-                                 </div>
-                             </div>
-                             <p class="mt-3 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ipsam. Iste veritatis id repellendus commodi facilis consequatur, minima aspernatur ipsam.</p>
-                             <div class="display justify-content-between">
-                                <div>
-                                 <ul class="display star-list gap-1">
-                                     <li><i class="ri-star-fill"></i></li>
-                                     <li><i class="ri-star-fill"></i></li>
-                                     <li><i class="ri-star-fill"></i></li>
-                                     <li><i class="ri-star-fill"></i></li>
-                                     <li><i class="ri-star-fill"></i></li>
-                                 </ul>
+                                <div class="client-info display align-items-center">
+                                    <div>
+                                        <img src="./assets/images/author_01.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1 text-white">Daniel Bloom</h6>
+                                        <p class="fw-medium text-white">Manager at a Restaurant</p>
+                                    </div>
                                 </div>
-                                <div class="client-img">
-                                     <img src="./assets/images/Screenshot 2025-01-15 184436.png" alt="" class="img-fluid">
+                                <p class="mt-3 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Doloremque, ipsam. Iste veritatis id repellendus commodi facilis consequatur, minima
+                                    aspernatur ipsam.</p>
+                                <div class="display justify-content-between">
+                                    <div>
+                                        <ul class="display star-list gap-1">
+                                            <li><i class="ri-star-fill"></i></li>
+                                            <li><i class="ri-star-fill"></i></li>
+                                            <li><i class="ri-star-fill"></i></li>
+                                            <li><i class="ri-star-fill"></i></li>
+                                            <li><i class="ri-star-fill"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="client-img">
+                                        <img src="./assets/images/Screenshot 2025-01-15 184436.png" alt=""
+                                            class="img-fluid">
+                                    </div>
                                 </div>
-                             </div>
                             </div>
-                         </div>
-                         <div class="swiper-slide">
+                        </div>
+                        <div class="swiper-slide">
                             <div class="total-client">
-                             <div class="client-info display align-items-center">
-                                 <div>
-                                     <img src="./assets/images/author_03.png" alt="" class="img-fluid">
-                                 </div>
-                                 <div>
-                                     <h6 class="mb-1">Daniel Bloom</h6>
-                                     <p class="fw-medium">Manager at a Restaurant</p>
-                                 </div>
-                             </div>
-                             <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ipsam. Iste veritatis id repellendus commodi facilis consequatur, minima aspernatur ipsam.</p>
-                             <div class="display justify-content-between">
-                                <div>
-                                 <ul class="display star-list gap-1">
-                                     <li><i class="ri-star-fill"></i></li>
-                                     <li><i class="ri-star-fill"></i></li>
-                                     <li><i class="ri-star-fill"></i></li>
-                                     <li><i class="ri-star-fill"></i></li>
-                                     <li><i class="ri-star-fill"></i></li>
-                                 </ul>
+                                <div class="client-info display align-items-center">
+                                    <div>
+                                        <img src="./assets/images/author_03.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">Daniel Bloom</h6>
+                                        <p class="fw-medium">Manager at a Restaurant</p>
+                                    </div>
                                 </div>
-                                <div class="client-img">
-                                     <img src="./assets/images/Screenshot 2025-01-15 1705.png" alt="" class="img-fluid">
+                                <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+                                    ipsam. Iste veritatis id repellendus commodi facilis consequatur, minima aspernatur
+                                    ipsam.</p>
+                                <div class="display justify-content-between">
+                                    <div>
+                                        <ul class="display star-list gap-1">
+                                            <li><i class="ri-star-fill"></i></li>
+                                            <li><i class="ri-star-fill"></i></li>
+                                            <li><i class="ri-star-fill"></i></li>
+                                            <li><i class="ri-star-fill"></i></li>
+                                            <li><i class="ri-star-fill"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="client-img">
+                                        <img src="./assets/images/Screenshot 2025-01-15 1705.png" alt=""
+                                            class="img-fluid">
+                                    </div>
                                 </div>
-                             </div>
                             </div>
-                         </div>
-                         <div class="swiper-slide">
+                        </div>
+                        <div class="swiper-slide">
                             <div class="total-client bg-client">
-                             <div class="client-info display align-items-center">
-                                 <div>
-                                     <img src="./assets/images/author_01.png" alt="" class="img-fluid">
-                                 </div>
-                                 <div>
-                                     <h6 class="mb-1 text-white">Daniel Bloom</h6>
-                                     <p class="fw-medium text-white">Manager at a Restaurant</p>
-                                 </div>
-                             </div>
-                             <p class="mt-3 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ipsam. Iste veritatis id repellendus commodi facilis consequatur, minima aspernatur ipsam.</p>
-                             <div class="display justify-content-between">
-                                <div>
-                                 <ul class="display star-list gap-1">
-                                     <li><i class="ri-star-fill"></i></li>
-                                     <li><i class="ri-star-fill"></i></li>
-                                     <li><i class="ri-star-fill"></i></li>
-                                     <li><i class="ri-star-fill"></i></li>
-                                     <li><i class="ri-star-fill"></i></li>
-                                 </ul>
+                                <div class="client-info display align-items-center">
+                                    <div>
+                                        <img src="./assets/images/author_01.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1 text-white">Daniel Bloom</h6>
+                                        <p class="fw-medium text-white">Manager at a Restaurant</p>
+                                    </div>
                                 </div>
-                                <div class="client-img">
-                                     <img src="./assets/images/Screenshot 2025-01-15 184436.png" alt="" class="img-fluid">
+                                <p class="mt-3 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Doloremque, ipsam. Iste veritatis id repellendus commodi facilis consequatur, minima
+                                    aspernatur ipsam.</p>
+                                <div class="display justify-content-between">
+                                    <div>
+                                        <ul class="display star-list gap-1">
+                                            <li><i class="ri-star-fill"></i></li>
+                                            <li><i class="ri-star-fill"></i></li>
+                                            <li><i class="ri-star-fill"></i></li>
+                                            <li><i class="ri-star-fill"></i></li>
+                                            <li><i class="ri-star-fill"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="client-img">
+                                        <img src="./assets/images/Screenshot 2025-01-15 184436.png" alt=""
+                                            class="img-fluid">
+                                    </div>
                                 </div>
-                             </div>
                             </div>
-                         </div>
+                        </div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
-         <!-- Blogs -->
+        <!-- Blogs -->
         <section class="blogs">
             <div class="container">
                 <div class="text-center popular-title position-relative">
@@ -1081,14 +1091,16 @@
                         <div class="blog-left">
                             <img src="./assets/images/01.jpg" alt="" class="img-fluid">
                             <h2 class="mt-3 mb-3">All City Cafes And Restaurants Switched To Delivery Mode</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat, quas, sequi ratione placeat rerum doloremque, exercitationem expedita nemo magni nisi necessitatibus. Quas praesentium, veritatis libero amet ipsa numquam accusantium!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat, quas, sequi ratione
+                                placeat rerum doloremque, exercitationem expedita nemo magni nisi necessitatibus. Quas
+                                praesentium, veritatis libero amet ipsa numquam accusantium!</p>
                             <div class="blog-left-foot display justify-content-between align-items-center">
                                 <div class="date mt-3">
                                     <p><i class="ri-calendar-line"></i>7,March 2021</p>
                                 </div>
                                 <div>
-                                   <span class="me-2"><i class="ri-chat-3-fill"></i>125</span>
-                                   <span><i class="ri-eye-fill"></i>250</span>
+                                    <span class="me-2"><i class="ri-chat-3-fill"></i>125</span>
+                                    <span><i class="ri-eye-fill"></i>250</span>
                                 </div>
                             </div>
                         </div>
@@ -1105,8 +1117,8 @@
                                         <p><i class="ri-calendar-line"></i>7,March 2021</p>
                                     </div>
                                     <div>
-                                       <span class="me-2"><i class="ri-chat-3-fill"></i>125</span>
-                                       <span><i class="ri-eye-fill"></i>250</span>
+                                        <span class="me-2"><i class="ri-chat-3-fill"></i>125</span>
+                                        <span><i class="ri-eye-fill"></i>250</span>
                                     </div>
                                 </div>
                             </div>
@@ -1122,8 +1134,8 @@
                                         <p><i class="ri-calendar-line"></i>7,March 2021</p>
                                     </div>
                                     <div>
-                                       <span class="me-2"><i class="ri-chat-3-fill"></i>125</span>
-                                       <span><i class="ri-eye-fill"></i>250</span>
+                                        <span class="me-2"><i class="ri-chat-3-fill"></i>125</span>
+                                        <span><i class="ri-eye-fill"></i>250</span>
                                     </div>
                                 </div>
                             </div>
@@ -1139,8 +1151,8 @@
                                         <p><i class="ri-calendar-line"></i>7,March 2021</p>
                                     </div>
                                     <div>
-                                       <span class="me-2"><i class="ri-chat-3-fill"></i>125</span>
-                                       <span><i class="ri-eye-fill"></i>250</span>
+                                        <span class="me-2"><i class="ri-chat-3-fill"></i>125</span>
+                                        <span><i class="ri-eye-fill"></i>250</span>
                                     </div>
                                 </div>
                             </div>
@@ -1149,7 +1161,7 @@
                 </div>
             </div>
         </section>
-          <!-- Mobile-application -->
+        <!-- Mobile-application -->
         <section class="mobile-app">
             <div class="container">
                 <div class="row align-items-center gy-5">
@@ -1161,7 +1173,10 @@
                             <div class="popular-title position-relative app-title mb-0">
                                 <h2>Get More Feature With Our Mobile Application</h2>
                             </div>
-                            <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui assumenda ad, iusto esse eius quas ducimus aliquam aperiam ullam porro consequuntur, exercitationem quis veniam amet modi, dicta enim cupiditate soluta? Officia illum voluptas dignissimos.</p>
+                            <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui assumenda ad,
+                                iusto esse eius quas ducimus aliquam aperiam ullam porro consequuntur, exercitationem
+                                quis veniam amet modi, dicta enim cupiditate soluta? Officia illum voluptas dignissimos.
+                            </p>
                             <div>
                                 <ul class="app-steps">
                                     <li>
@@ -1181,15 +1196,15 @@
                                         <div><i class="ri-apple-fill"></i></div>
                                         <div>
                                             <span>Avaliable On</span>
-                                        <div class="fw-bolder">App Store</div>
-                                    </div>
+                                            <div class="fw-bolder">App Store</div>
+                                        </div>
                                     </li>
                                     <li class="google-store apple-store display">
                                         <div><i class="ri-google-play-fill"></i></div>
                                         <div>
                                             <span>Avaliable On</span>
-                                        <div class="fw-bolder">Google Store</div>
-                                    </div>
+                                            <div class="fw-bolder">Google Store</div>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
@@ -1200,38 +1215,44 @@
         </section>
         <!-- Subscribe-letter -->
         <section class="letter">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-8">
-                            <div class="display align-items-center letter-content">
-                                <i class="ri-mail-send-fill fw-bolder me-3"></i>
-                                <h2 class="pizza-title">Subscribe To Our Newsletter</h2>
-                            </div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <div class="display align-items-center letter-content">
+                            <i class="ri-mail-send-fill fw-bolder me-3"></i>
+                            <h2 class="pizza-title">Subscribe To Our Newsletter</h2>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="position-relative">
-                                <form action="">
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="position-relative">
+                            <form action="">
+                                <div>
                                     <div>
-                                        <div>
-                                            <input type="email" class="form-control email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email" required name="email">
-                                        </div>
-                                        <div>
-                                            <button type="submit" class="sub-btn">Subscribe Now</button>
-                                        </div>
+                                        <input type="email" class="form-control email" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="Your Email" required name="email">
                                     </div>
-                                </form>
-                            </div>
+                                    <div>
+                                        <button type="submit" class="sub-btn d-none d-sm-block">Subscribe Now</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button type="submit" class="sub-btn after-sub-btn d-sm-none">Subscribe Now</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
         <footer class="py-5 position-relative">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-3">
+                <div class="row align-items-center footer-main-content position-relative gy-5">
+                    <div class="col-xl-3 col-lg-6">
                         <div class="foot-1 position-relative">
-                            <a href="./index.html"><img src="./assets/images/white_logo.png" alt="" class="img-fluid"></a>
-                            <p class="text-white mt-4 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, rerum et voluptates asperiores perspiciatis quod.</p>
+                            <a href="./index.html"><img src="./assets/images/white_logo.png" alt=""
+                                    class="img-fluid"></a>
+                            <p class="text-white mt-4 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Nemo, rerum et voluptates asperiores perspiciatis quod.</p>
                             <ul class="foot-1-icons display align-items-center gap-2">
                                 <li><i class="ri-facebook-fill"></i></li>
                                 <li><i class="ri-twitter-fill"></i></li>
@@ -1239,9 +1260,11 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-1">
+                    <div class="col-xl-1 col-sm-3 col-6">
                         <div class="foot-2">
-                            <div class="foot-2-title"><h3 class="position-relative mb-3">Links</h3></div>
+                            <div class="foot-2-title">
+                                <h3 class="position-relative mb-3">Links</h3>
+                            </div>
                             <ul>
                                 <li>Home</li>
                                 <li>About Us</li>
@@ -1251,9 +1274,11 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-2">
-                        <div class="foot-2 ps-5">
-                            <div class="foot-2-title"><h3 class="position-relative mb-3">Other Links</h3></div>
+                    <div class="col-xl-2 col-sm-3 col-6">
+                        <div class="foot-2 foot-padding ps-5">
+                            <div class="foot-2-title">
+                                <h3 class="position-relative mb-3">Other Links</h3>
+                            </div>
                             <ul>
                                 <li>Home</li>
                                 <li>About Us</li>
@@ -1263,51 +1288,87 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-xl-3 col-md-6">
                         <div class="foot-img">
-                            <div class="foot-2-title"><h3 class="position-relative mb-4">Instagram Gallery</h3></div>
+                            <div class="foot-2-title">
+                                <h3 class="position-relative mb-4">Instagram Gallery</h3>
+                            </div>
                             <div class="row gy-4">
                                 <div class="col-4">
-                                    <div class="foots-img position-relative"><img src="./assets/images/foot-1.jpg" alt="" class="img-fluid"></div>
-                                    <span class="foots-icons"><i class="ri-instagram-line"></i></span>
+                                    <div class="foots-img position-relative"><img src="./assets/images/foot-1.jpg"
+                                            alt="" class="img-fluid">
+                                        <span class="foots-icons"><i class="ri-instagram-line"></i></span>
+                                    </div>
+
                                 </div>
                                 <div class="col-4">
-                                    <div class="foots-img position-relative"><img src="./assets/images/02-foot.jpg" alt="" class="img-fluid"></div>
+                                    <div class="foots-img position-relative"><img src="./assets/images/02-foot.jpg"
+                                            alt="" class="img-fluid">
+                                        <span class="foots-icons"><i class="ri-instagram-line"></i></span>
+                                    </div>
                                 </div>
                                 <div class="col-4">
-                                    <div class="foots-img position-relative"><img src="./assets/images/03-foot.jpg" alt="" class="img-fluid"></div>
+                                    <div class="foots-img position-relative"><img src="./assets/images/03-foot.jpg"
+                                            alt="" class="img-fluid">
+                                        <span class="foots-icons"><i class="ri-instagram-line"></i></span>
+                                    </div>
                                 </div>
                                 <div class="col-4">
-                                    <div class="foots-img position-relative"><img src="./assets/images/04-foot.jpg" alt="" class="img-fluid"></div>
+                                    <div class="foots-img position-relative"><img src="./assets/images/04-foot.jpg"
+                                            alt="" class="img-fluid">
+                                        <span class="foots-icons"><i class="ri-instagram-line"></i></span>
+                                    </div>
                                 </div>
                                 <div class="col-4">
-                                    <div class="foots-img position-relative"><img src="./assets/images/05-foot.jpg" alt="" class="img-fluid"></div>
+                                    <div class="foots-img position-relative"><img src="./assets/images/05-foot.jpg"
+                                            alt="" class="img-fluid">
+                                        <span class="foots-icons"><i class="ri-instagram-line"></i></span>
+                                    </div>
                                 </div>
                                 <div class="col-4">
-                                    <div class="foots-img position-relative"><img src="./assets/images/06-foot.jpg" alt="" class="img-fluid"></div>
+                                    <div class="foots-img position-relative"><img src="./assets/images/06-foot.jpg"
+                                            alt="" class="img-fluid">
+                                        <span class="foots-icons"><i class="ri-instagram-line"></i></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-xl-3 col-md-6">
                         <div class="foot-contact ms-3">
-                            <div class="foot-2-title"><h3 class="position-relative mb-4">Contact Us</h3></div>
+                            <div class="foot-2-title">
+                                <h3 class="position-relative mb-4">Contact Us</h3>
+                            </div>
                             <ul>
-                                <li class="mb-2"><i class="ri-map-pin-fill me-2"></i>203, Envato ka Yents, Behind Alis Str, Melbourne, Australia</li>
-                                <li class="mb-2"><i class="ri-phone-fill  me-2"></i>
-                                    <span>+000 123 456 789</span>
-                                    <br>
-                                    <span>+000 12 48 57 665</span>
+                                <li class="mb-2 d-flex"><i class="ri-map-pin-fill me-2"></i>203, Envato ka Yents, Behind
+                                    Alis Str, Melbourne, Australia</li>
+                                <li class="mb-2 d-flex"><i class="ri-phone-fill  me-2"></i>
+                                    <div>
+                                        <span>+000 123 456 789</span>
+                                        <br>
+                                        <span>+000 12 48 57 665</span>
+                                    </div>
                                 </li>
-                                <li><i class="ri-mail-fill  me-3"></i>
-                                   <span> services@foodor.com</span>
-                                    <span class="ms-4">info@foodor.com</span></li>
+                                <li class="d-flex"><i class="ri-mail-fill  me-3"></i>
+                                    <div>
+                                        <span> services@foodor.com</span>
+                                        <br>
+                                        <span>info@foodor.com</span>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
+        <div class="footer-2 text-center">
+            <p class="mb-0">Copyright © 2021 <a href="./index.html"><strong>Foodor.</strong></a> All rights reserved.
+            </p>
+        </div>
+        <div class="bottom-btn scroll-btn">
+            <a href="#main" class="text-decoration-none"><i class="ri-arrow-up-wide-fill"></i></a>
+        </div>
     </main>
 
     <!-- Bootstrap CSS -->
@@ -1320,7 +1381,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Nice select -->
     <script src="./assets/javascript/nice.select/jquery.nice-select.js"></script>
-
     <script>
         $(document).ready(function () {
             $('select').niceSelect();
@@ -1363,6 +1423,16 @@
                 clickable: true,
             },
         });
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 600) {
+                    $(".scroll-btn").addClass("bottom-btn");
+                } else {
+                    $(".scroll-btn").removeClass("bottom-btn");
+                }
+            });
+        });
+        
     </script>
 </body>
 

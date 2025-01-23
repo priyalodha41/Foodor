@@ -371,7 +371,7 @@ ul,ol{
     opacity: 1;
     visibility: visible;
 }
-.add-btn{
+.add-btn,.foots-icons i{
     background-color: var(--secondary-color);
     color: #fff;
     padding: 8px 20px;
@@ -386,7 +386,13 @@ ul,ol{
     visibility: hidden;
     border: none;
 }
-.card:hover .add-btn{
+.foots-icons i{
+    background: none;
+    transform: translate(-50%,-50%);
+    font-size: 19px;
+    cursor: pointer;
+}
+.card:hover .add-btn,.foots-img:hover .foots-icons i{
     opacity: 1;
     visibility:visible;
 }
@@ -586,6 +592,11 @@ ul,ol{
     border-radius: 30px;
     font-size: 14px;
 }
+.sub-btn.after-sub-btn{
+    top: 100%;
+    right: 20%;
+    margin-top: 10px;
+}
 .letter{
     padding: 70px;
 }
@@ -609,17 +620,24 @@ footer{
 .foot-1-icons li i:hover{
     background-color: var(--secondary-color);
 }
-/* footer::before{
+.footer-main-content::before{
     background: url(../images/f-loc-left.png);
-    width: 303px;
     position: absolute;
     content: "";
-    left: 10%;
-    top: 0;
-    width: 100%;
+    right: 83%;
+    top: 65%;
+    height:56%;
+    width: 303px;
+}
+.footer-main-content::after{
+    position: absolute;
+    right: -90px;
+    top: -80px;
+    content: "";
+    background: url(../images/f-loc-right.png) no-repeat top right;
+    width: 303px;
     height: 100%;
-    /* z-index: -1; */
-
+}
 .foot-2-title h3::before{
     content: "";
     position: absolute;
@@ -669,6 +687,7 @@ footer{
 }
 .foot-contact li i{
     color: var(--secondary-color);
+    display: block;
 }
 .foot-contact li span{
     transition: all 0.4s linear;
@@ -677,6 +696,37 @@ footer{
 .foot-contact li span:hover{
     color: var(--secondary-color);
 }
-.foots-icons{
-    
+.footer-2{
+    background-color: #373844;
+}
+.footer-2 p{
+    color: white;
+    padding: 18px 0px;
+}
+.footer-2 p a{
+    color: var(--secondary-color);
+    text-decoration: none !important;
+}
+.bottom-btn a{
+    right: 30px;
+    bottom: 50px;
+    background:var(--secondary-color);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 22px;
+    position: fixed;
+    z-index: 230;
+}
+.bottom-btn a i{
+    font-weight: 900;
+}
+.off-canvas-item .off-canvas-link{
+    padding: 20px 10px !important;
+}
+.offcanvas.offcanvas-start{
+    width: 70%;
 }

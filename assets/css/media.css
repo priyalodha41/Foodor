@@ -4,6 +4,12 @@
         flex-basis: auto;
     }
 }
+@media (max-width:1360px) {
+    .footer-main-content::after,.footer-main-content::before{
+       background: none;
+       display: none;
+    }
+}
 @media (min-width: 1285px) {
     .container {
         max-width: 1170px;
@@ -43,6 +49,12 @@
     }
      .pizza-title{
         font-size: 2rem;
+    }
+    .foot-padding{
+        padding: 0px !important;
+    }
+    .foot-contact{
+        margin-left: 0px !important;
     }
 }
 @media(max-width:768px) {
@@ -90,5 +102,16 @@
     }
     .sub-btn{
         padding: 0px 13px;
+    }
+    .navbar-brand img{
+        width: 80%;
+    }
+    .btn-find{
+        display: none;
+    }
+}
+@media (max-width:368px) {
+    .navbar-brand img{
+        width: 50%;
     }
 }
